@@ -1,0 +1,68 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+.dangoContainer, .oniContainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  position: relative;
+}
+
+.dangoContainer::after {
+  content: "";
+  background-color: #000;
+  width: 95%;
+  height: 1px;
+  position: absolute;
+  bottom: -120px;
+}
+
+.textContainer {
+  width: 50vw;
+  padding-top: 64px;
+
+}
+
+.imageContainer {
+  width: 50vw;
+  height: 530px;
+}
+
+.dangoImage, .oniImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.pageTitle {
+  font-size: 40px;;
+  margin-top: 136px;
+  text-align: center;
+  letter-spacing: 8px;
+}
+
+.dangoTitle, .oniTitle {
+  letter-spacing: 4.8px;
+}
+
+.dangoTitle::after, .oniTitle::after {
+  content: "Project";
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: #EF9B38;
+}
+
+.dangoText, .oniText {
+  font-size: 18px;
+  padding-top: 40px;
+}
+
+.oniContainer {
+  margin-top: 240px;
+}
+
+.dangoTitle, .dangoText, .oniTitle, .oniText {
+  padding-left: 64px;
+  padding-right: 64px;
+}

@@ -1,25 +1,46 @@
-import logo from './logo.svg';
 import './App.css';
+// import MediaQuery from "react-responsive";
+import { BrowserRouter, Route ,Switch } from 'react-router-dom';
+import { Header } from './HeaderComponents/Header';
+import { Footer } from './FooterComponents/Footer';
+import { Service } from './ServiceComponents/Service';
+import { About } from './AboutComponents/About';
+import { Staff } from './StaffComponents/Staff';
+import { Contact } from './ContactComponents/Contact';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+    <BrowserRouter>
+      <div className="header">
+        <Header />
+      </div>
+      <div className="body">
+        <Switch>
+          <Route exact path="/"><Service /></Route>
+          <Route exact path="/about"><About /></Route>
+          <Route exact path="/staff"><Staff /></Route>
+          <Route exact path="/contact"><Contact /></Route>
+          <Route ><NotFound /></Route>
+        </Switch>
+      </div>
+    </BrowserRouter>
+      <div className="footer">
+        <Footer />
+      </div>
+      {/* <MediaQuery query="(max-width: 767px)">
+        <SPContents />
+      </MediaQuery>
+      <MediaQuery query="(min-width: 767px)">
+        <PCContents />
+      </MediaQuery> メディアクエリの実装→一旦保留*/}
     </div>
   );
 }
+function NotFound() {
+  return <h1>ページが見つかりません</h1>;
+}
+
 
 export default App;
+
