@@ -5,7 +5,7 @@ import { Onitaiji } from './Onitaiji';
 
 export const Service = () => {
   return (
-    <div>
+    <div className="servicePage">
       <Dango />
       <Onitaiji />
     </div>

@@ -1,9 +1,12 @@
 import React from 'react'
+import { Infomation } from './Infomation'
+import { Access } from './Access'
 
 export const About = () => {
   return (
-    <div>
-      会社について
+    <div className="aboutPage">
+      <Infomation />
+      <Access />
     </div>
   )
 }
