@@ -1,0 +1,25 @@
+/* @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css); */
+
+.infomationPage {
+  background-image:url(../images/PC_Company_gray.svg) ;
+}
+
+.infomationTitle {
+  text-align: center;
+  padding-top: 136px;
+  letter-spacing: 8px;
+}
+
+.infomationTable {
+  margin: 56px auto;
+  font-size: 24px;
+  border-spacing: 64px;
+}
+
+.infoTableHeader {
+  font-weight: normal;
+  text-align: left;
+  width: 160px;
+}
+
+

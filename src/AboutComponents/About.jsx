@@ -1,6 +1,7 @@
-import React from 'react'
-import { Infomation } from './Infomation'
-import { Access } from './Access'
+import React from 'react';
+import './About.css';
+import { Infomation } from './Infomation';
+import { Access } from './Access';
 
 export const About = () => {
   return (

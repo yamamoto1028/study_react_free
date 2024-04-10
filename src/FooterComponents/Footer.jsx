@@ -1,10 +1,11 @@
-import React from 'react'
-import { ToContact } from './ToContact'
-import { Recruit } from './Recruit'
+import React from 'react';
+import "./Footer.css";
+import { ToContact } from './ToContact';
+import { Recruit } from './Recruit';
 
 export const Footer = () => {
   return (
-    <div>
+    <div className="footerPage">
       <footer>
         <ToContact />
         <Recruit />
