@@ -3,7 +3,7 @@ import React from 'react'
 export const Infomation = () => {
   return (
     <div className="infomationPage">
-      <h1 className="infomationTitle">会社概要</h1>
+      <h1 className="sectionTitle">会社概要</h1>
       <div className="infomationContainer">
         <table className="infomationTable">
           <tr className="infoTableRow">

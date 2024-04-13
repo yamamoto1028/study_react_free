@@ -1,5 +1,9 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
+.servicePage{
+  margin-bottom: 120px;
+}
+
 .dangoContainer, .oniContainer{
   width: 100%;
   display: flex;

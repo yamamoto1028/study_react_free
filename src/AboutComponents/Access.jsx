@@ -5,7 +5,7 @@ import { OsakaMap } from './OsakaMap'
 export const Access = () => {
   return (
     <div className="AccessPage">
-      <h1 className="AccessTitle">アクセス</h1>
+      <h1 className="sectionTitle">アクセス</h1>
       <TokyoMap />
       <OsakaMap />
     </div>
