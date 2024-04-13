@@ -1,0 +1,73 @@
+/* @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css); */
+
+.infomationPage {
+  background-image:url(../images/PC_Company_gray.svg) ;
+}
+
+.aboutPage {
+  margin-bottom: 120px;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 136px;
+  letter-spacing: 8px;
+}
+
+.infomationTable {
+  margin: 56px auto;
+  font-size: 24px;
+  border-spacing: 64px;
+}
+
+.infoTableHeader {
+  font-weight: normal;
+  text-align: left;
+  width: 160px;
+}
+
+.infoTableRow:nth-child(3) .infoTableData span {
+  margin-left: 24px;
+}
+
+.mapContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+}
+
+.townMap {
+  border:0;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.addressBox {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  letter-spacing: 2.4px;
+  margin-top: 32px;
+}
+
+.addressText {
+  margin-left: 48px;
+}
+
+.mapName {
+  text-align: center;
+  font-size: 32px;
+  margin: 120px auto 0;
+  letter-spacing: 6.4px;
+}
+
+.mapName::before {
+  content: "";
+  display: inline-block;
+  background-color: #FD9603;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 20px;
+}

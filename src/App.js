@@ -38,7 +38,7 @@ function App() {
   );
 }
 function NotFound() {
-  return <h1>ページが見つかりません</h1>;
+  return <h1>多分パスちがうで？ようみてみ</h1>;
 }
 
 
