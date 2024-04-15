@@ -5,7 +5,7 @@ import { Header } from './HeaderComponents/Header';
 import { Footer } from './FooterComponents/Footer';
 import { Service } from './ServiceComponents/Service';
 import { About } from './AboutComponents/About';
-import { Staff } from './StaffComponents/Staff';
+import Staff from './StaffComponents/Staff';
 import { Contact } from './ContactComponents/Contact';
 
 function App() {
