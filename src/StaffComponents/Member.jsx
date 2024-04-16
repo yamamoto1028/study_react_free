@@ -2,9 +2,17 @@ import React from 'react'
 import Human from '../images/Member.jpg';
 
 export const Member = (props) => {
+  let postClassName = '';
+  if (props.post === '代表') {
+    postClassName = 'ceoPost';
+  } else if (props.post === '社員'){
+    postClassName = 'regularPost';
+  } else {
+    postClassName = 'otherPost';
+  }
   return (
     <div>
-      <h2 className='postName'>{ props.post }</h2>
+      <h2 className={`postName ${postClassName}`}>{ props.post }</h2>
       <section className="memberWrapper">
         <div className="textWrapper">
           <div className="nameTitle">
