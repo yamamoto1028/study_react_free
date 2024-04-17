@@ -1,12 +1,20 @@
 
-
-.memberWrapper {
-  text-align: center;
+.staffWrapper {
+  background-color: #FFFFFF;
   display: flex;
+}
+.memberWrapper {
+  width: 81.25%;
+  margin: auto;
+}
+
+.textWrapper {
+  width: 50%;
 }
 
 .textContainer {
   padding-top: 0;
+  width: 100%;
 }
 
 .imageWrapper {
@@ -20,12 +28,17 @@
 }
 
 .postName {
+  position: relative;
   font-size: 40px;
-
+  letter-spacing: 4px;
+  display: flex;
+  justify-content: end;
+  margin-right: 15.625%;
 }
 
-.ceoPost {
-  position: relative;
+.postName::after{
+  color: #EF9B38;
+  padding-left: 16px;
 }
 
 .ceoPost::after{
@@ -41,6 +54,33 @@
   left: 0px;
 }
 
-.regularPost::after{
+.regularPost{
+  margin-top: 200px;
+}
+
+.regularPost::after {
   content: "Member";
+}
+
+.staffName {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  width: 156px;
+}
+
+.staffName::after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  height: 1px;
+  width: 256.410256%;
+  left: -15px;
+  bottom: -6px;
+}
+
+
+
+.beliefText {
+  margin-top: 16px;
 }
