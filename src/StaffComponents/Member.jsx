@@ -11,19 +11,21 @@ export const Member = (props) => {
     postClassName = 'otherPost';
   }
   return (
-    <div>
+    <div className="staffPage">
       <h2 className={`postName ${postClassName}`}>{ props.post }</h2>
       <section className="memberWrapper">
         <div className="staffWrapper">
           <div className="textWrapper">
-            <div className="nameTitle">
-              <div className="kindsPost">{ props.Department }</div>
-              <div className="staffName">{ props.name }</div>
-            </div>
-            <div className="textContainer">
-              <p className="careerText">{ props.career }</p>
-              <p className="beliefText">{ props.berief }</p>
-              <p className="ExcitedText">{ props.excited }</p>
+            <div className="textBox">
+              <div className="nameTitle">
+                <div className="kindsPost">{ props.Department }</div>
+                <div className="staffName">{ props.name }</div>
+              </div>
+              <div className="textContainer">
+                <p className="careerText">{ props.career }</p>
+                <p className="beliefText">{ props.berief }</p>
+                <p className="ExcitedText">{ props.excited }</p>
+              </div>
             </div>
           </div>
           <div className="imageWrapper">

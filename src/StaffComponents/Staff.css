@@ -1,12 +1,42 @@
 
-.staffWrapper {
+.staffPage {
+  background-color: #F5F5F5;
+  position: relative;
+  z-index: 0;
+}
+
+.staffPage:nth-child(2), .staffPage:nth-child(3) {
+  padding-top: 200px;
+}
+
+.staffPage:nth-child(4), .staffPage:nth-child(5), .staffPage:nth-child(6) {
+  padding: 64px 0;
+}
+
+.staffPage:nth-child(2) .staffWrapper, 
+.staffPage:nth-child(4) .staffWrapper, 
+.staffPage:nth-child(6) .staffWrapper {
   background-color: #FFFFFF;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 508px;
 }
+
+.staffPage:nth-child(3) .staffWrapper, .staffPage:nth-child(5) .staffWrapper {
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  height: 508px;
+  flex-direction:row-reverse;
+}
+
 .memberWrapper {
   width: 81.25%;
   margin: auto;
 }
+
+
 
 .textWrapper {
   width: 50%;
@@ -14,7 +44,17 @@
 
 .textContainer {
   padding-top: 0;
-  width: 100%;
+  width: 72.13%;
+}
+
+.staffPage:nth-child(3) .memberWrapper .staffWrapper .textWrapper .textBox, 
+.staffPage:nth-child(5) .memberWrapper .staffWrapper .textWrapper .textBox {
+  margin-left: 68px;
+}
+
+.staffPage:nth-child(3) .memberWrapper .staffWrapper .imageWrapper, 
+.staffPage:nth-child(5) .memberWrapper .staffWrapper .imageWrapper {
+  margin-right: 68px;
 }
 
 .imageWrapper {
@@ -47,19 +87,30 @@
 
 .ceoPost::before {
   content: "";
-  background-color: #EF9B38;
+  background-color: #FAB805;
   position: absolute;
-  width: 10px;
-  height: 4%;
-  left: 0px;
-}
-
-.regularPost{
-  margin-top: 200px;
+  width: 19%;
+  height: 4px;
+  right: 0px;
+  bottom: 0px;
 }
 
 .regularPost::after {
   content: "Member";
+}
+
+.regularPost::before {
+  content: "";
+  background-color: #FAB805;
+  position: absolute;
+  width: 28%;
+  height: 4px;
+  right: -3px;
+  bottom: 0px;
+}
+
+.otherPost {
+  font-size: 0;
 }
 
 .staffName {
