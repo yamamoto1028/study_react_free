@@ -1,6 +1,5 @@
 import React from 'react'
 import './Staff.css';
-import CEO from './CEO';
 import Member from './Member';
 
 const Staff = () => {
@@ -9,11 +8,10 @@ const Staff = () => {
     { post: '社員', Department: '営業', name: '開発  イヌ太郎', career:'経歴のテキスト。経歴のテキスト。経歴のテキスト。経歴のテキスト。', berief:'想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。', excited:'おもしろテキスト。おもしろテキスト。おもしろテキスト。', staffImage:'いぬ' },
     { post: '', Department: '営業', name: '開発  サル太郎', career:'経歴のテキスト。経歴のテキスト。経歴のテキスト。経歴のテキスト。', berief:'想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。', excited:'おもしろテキスト。おもしろテキスト。おもしろテキスト。', staffImage:'さる' },
     { post: '', Department: '営業', name: '開発  キジ太郎', career:'経歴のテキスト。経歴のテキスト。経歴のテキスト。経歴のテキスト。', berief:'想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。', excited:'おもしろテキスト。おもしろテキスト。おもしろテキスト。', staffImage:'きじ' },
-    { post: '', Department: '営業', name: '開発  オニ太郎', career:'経歴のテキスト。経歴のテキスト。経歴のテキスト。経歴のテキスト。', berief:'想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。', excited:'おもしろテキスト。おもしろテキスト。おもしろテキスト。', staffImage:'おに' },
+    { post: '', Department: '営業', name: '開発 オニ太郎', career:'経歴のテキスト。経歴のテキスト。経歴のテキスト。経歴のテキスト。', berief:'想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。想いのテキスト。', excited:'おもしろテキスト。おもしろテキスト。おもしろテキスト。', staffImage:'おに' },
   ];
   return (
     <div>
-      <CEO />
       {members.map((member, index) => (
         <Member key={index} post={member.post} Department={member.Department} 
         name={member.name} career={member.career} berief={member.berief} excited={member.excited} staffImage={member.staffImage} />
