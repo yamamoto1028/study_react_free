@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
 .servicePage{
   margin-bottom: 120px;
@@ -36,14 +35,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-
-.pageTitle {
-  font-size: 40px;;
-  margin-top: 136px;
-  text-align: center;
-  letter-spacing: 8px;
 }
 
 .dangoTitle, .oniTitle {

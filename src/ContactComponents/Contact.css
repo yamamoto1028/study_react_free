@@ -1,0 +1,20 @@
+
+
+.contactPage {
+  background-color: #f5f5f5;
+  padding: 120px 0;
+}
+
+.formPage {
+  background-color: #fff;
+  height: 1125px;
+  width: 800px;
+  margin: auto;
+}
+
+.contactTitle {
+  text-align: center;
+  padding: 120px 0 0;
+  font-size: 40px;
+  letter-spacing: 8px;
+}
