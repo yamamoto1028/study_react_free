@@ -75,11 +75,13 @@
   font-weight: bold;
   border: none;
   border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
 }
+
+.formBtn:hover {
+  background-color: #333333FD;
+  cursor: pointer;
+}
+
 
 .modalPage {
   display: none;
@@ -88,11 +90,20 @@
 .modalContainer {
   display: block;
   position: fixed;
-  background-color: #A9A9A9;
   height: 100vh;
   width: 100vw;
   top: 0px;
   left: 0px;
+}
+
+.modalBack {
+  background-color: #A9A9A9;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0px;
+  left: 0px;
+  opacity: 50%;
 }
 
 .modalScreen {
@@ -105,6 +116,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 
 .modaltext {
   font-size: 40px;

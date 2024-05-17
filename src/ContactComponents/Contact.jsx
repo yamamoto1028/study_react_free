@@ -5,7 +5,7 @@ import { Form } from './Form'
 
 export const Contact = () => {
   return (
-    <div className="contactPage">
+    <div className="contactPage" id='contactPage'>
       <Form />
     </div>
   )
