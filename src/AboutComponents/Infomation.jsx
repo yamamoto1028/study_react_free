@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+import { Info } from "./infoRow.jsx";
 
 export const Infomation = () => {
   return (
@@ -6,33 +7,14 @@ export const Infomation = () => {
       <h1 className="sectionTitle">会社概要</h1>
       <div className="infomationContainer">
         <table className="infomationTable">
-          <tr className="infoTableRow">
-            <th className="infoTableHeader">社名</th>
-            <td className="infoTableData">株式会社かいはつ</td>
-          </tr>
-          <tr className="infoTableRow">
-            <th className="infoTableHeader">住所</th>
-            <td className="infoTableData">東京都千代田区</td>
-          </tr>
-          <tr className="infoTableRow">
-            <th className="infoTableHeader">代表</th>
-            <td className="infoTableData">代表取締役<span>開発桃太郎</span></td>
-          </tr>
-          <tr className="infoTableRow">
-            <th className="infoTableHeader">電話番号</th>
-            <td className="infoTableData">00-0000-0000</td>
-          </tr>
-          <tr className="infoTableRow">
-            <th className="infoTableHeader">資本金</th>
-            <td className="infoTableData">10,000,000円</td>
-          </tr>
-          <tr className="infoTableRow">
-            <th className="infoTableHeader">設立</th>
-            <td className="infoTableData">2022年1月</td>
-          </tr>
+          <Info tableHeader="社名" tableData="株式会社かいはつ" />
+          <Info tableHeader="住所" tableData="東京都千代田区" />
+          <Info tableHeader="代表" tableData="代表取締役  開発桃太郎" />
+          <Info tableHeader="電話番号" tableData="00-0000-0000" />
+          <Info tableHeader="資本金" tableData="10,000,000円" />
+          <Info tableHeader="設立" tableData="2022年1月" />
         </table>
       </div>
     </div>
-  )
-}
-
+  );
+};
