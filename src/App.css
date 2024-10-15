@@ -53,3 +53,10 @@
   display: flex;
   align-items: center;
 }
+
+.pageTitle {
+  font-size: 40px;;
+  margin-top: 136px;
+  text-align: center;
+  letter-spacing: 8px;
+}
