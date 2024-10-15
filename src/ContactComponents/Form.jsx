@@ -6,6 +6,42 @@ export const Form = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => setIsModalOpen(true);
 
+  const formFields = [
+    {
+      divClassName: "formName formItem",
+      htmlFor: "field-name",
+      labelClassName: "nameLabel labelContent",
+      title: "お名前",
+      type: "text",
+      inputClassName: "nameInput inputContent",
+      name: "entry.1964537088",
+      id: "field-name",
+      required: "required",
+    },
+    {
+      divClassName: "formMail formItem",
+      htmlFor: "mail-field",
+      labelClassName: "mailLabel labelContent",
+      title: "メールアドレス",
+      type: "email",
+      inputClassName: "mailInput inputContent",
+      name: "entry.575381573",
+      id: "mail-field",
+      required: "required",
+    },
+    {
+      divClassName: "formTitle formItem",
+      htmlFor: "title-field",
+      labelClassName: "abelTitle labelContent",
+      title: "タイトル",
+      type: "text",
+      inputClassName: "titleInput inputContent",
+      name: "entry.725750459",
+      id: "title-field",
+      required: "required",
+    },
+  ];
+
   return (
     <div className="formPage" id="formPage">
       <h1 className="contactTitle">お問い合わせ</h1>
@@ -18,41 +54,9 @@ export const Form = () => {
           target="modal"
           onSubmit={openModal}
         >
-          <FormWrap
-            divClassName="formName formItem"
-            htmlFor="field-name"
-            labelClassName="nameLabel labelContent"
-            title="お名前"
-            type="text"
-            inputClassName="nameInput inputContent"
-            name="entry.1964537088"
-            id="field-name"
-            required
-          />
-
-          <FormWrap
-            divClassName="formMail formItem"
-            htmlFor="mail-field"
-            labelClassName="mailLabel labelContent"
-            title="メールアドレス"
-            type="email"
-            inputClassName="mailInput inputContent"
-            name="entry.575381573"
-            id="mail-field"
-            required
-          />
-
-          <FormWrap
-            divClassName="formTitle formItem"
-            htmlFor="title-field"
-            labelClassName="abelTitle labelContent"
-            title="タイトル"
-            type="text"
-            inputClassName="titleInput inputContent"
-            name="entry.725750459"
-            id="title-field"
-            required
-          />
+          {formFields.map((field, index) => (
+            <FormWrap key={index} {...field} />
+          ))}
           <div className="formTextarea formItem">
             <label htmlFor="massage-field" className="msgLabel labelContent">
               メッセージ
