@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 import "./Footer.css";
-import { ToContact } from './ToContact';
-import { Recruit } from './Recruit';
+import { ToContact } from "./ToContact";
+import { Recruit } from "./Recruit";
 
 export const Footer = () => {
   return (
@@ -11,8 +11,5 @@ export const Footer = () => {
         <Recruit />
       </footer>
     </div>
-  )
-}
-
-
-
+  );
+};

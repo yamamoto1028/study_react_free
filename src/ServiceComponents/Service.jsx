@@ -1,7 +1,7 @@
-import React from 'react';
-import './Service.css';
-import { Dango } from './Dango';
-import { Onitaiji } from './Onitaiji';
+import React from "react";
+import "./Service.css";
+import { Dango } from "./Dango";
+import { Onitaiji } from "./Onitaiji";
 
 export const Service = () => {
   return (
@@ -9,6 +9,6 @@ export const Service = () => {
       <Dango />
       <Onitaiji />
     </div>
-  )
-}
+  );
+};
 export default Service;
